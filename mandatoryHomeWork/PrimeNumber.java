@@ -19,6 +19,27 @@ public class PrimeNumber {
 	 *  return true  
 	 */
 	
+	/*
+	 * PSUEDO Code
+if n>1 && n<1000
+  for loop i from 2 to n/2
+     if n%i==0
+       return false
+  end for
+return true
+	 */
+	
+	public boolean isPrimes(int num)
+	{
+		if(num>1&&num<=1000)
+		{
+			for(int i=2;i<=num/2;i++)
+				if(num%2==0)
+					return false;
+		}
+		return true;
+	}
+	
 	public boolean isPrime(int number)
 	{
 		for(int i=2;i<=number/2;i++)
