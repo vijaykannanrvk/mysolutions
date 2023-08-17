@@ -32,7 +32,7 @@ public class FourthTaskSalesForce {
 		WaitForElement(driver, By.cssSelector("div.slds-icon-waffle")).click();
 		WaitForElement(driver, By.xpath("//div//p[text()='Sales']")).click();
 		WaitForElement(driver, By.xpath("//a[@title='Accounts']/parent::*")).click();
-		WaitForElementVisible(driver, By.xpath("//li[.='New']")).click();
+		WaitForElement(driver, By.xpath("//li[.='New']")).click();
 		WaitForElementVisible(driver, By.xpath("//label[text()='Account Name']/parent::div//input")).sendKeys("Vijaykannan");
 		WaitForElement(driver, By.xpath("//button[text()='Save']")).click();
 		Assert.assertEquals("New Account successfully Created",true, WaitForElement(driver, By.xpath("//span[.='Account \"Vijaykannan\" was created.']")).isDisplayed());
