@@ -95,5 +95,12 @@ public class CWSelfDivingNumberRange {
 		List<Integer> expected= Arrays.asList(1,2,3,4,5,6,7,8,9,11,12,15,22);
 		Assert.assertEquals(expected, selfDividNumberRange(1, 22));
 	}
+	
+	@Test
+	public void test3()
+	{
+		List<Integer> expected= Arrays.asList(99,111,112);
+		Assert.assertEquals(expected, selfDividNumberRange(99,112));
+	}
 
 }
