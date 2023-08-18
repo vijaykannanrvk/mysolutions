@@ -2,16 +2,8 @@ package mysolutions.mandatoryHomeWork.foundation.Aug3rdWeek.day4;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
-
 import org.junit.Test;
-import org.junit.matchers.JUnitMatchers;
-
-import net.bytebuddy.agent.builder.AgentBuilder.RawMatcher.ForElementMatchers;
-
-import org.hamcrest.Matcher;
 import org.junit.Assert;
 
 public class CWSelfDivingNumberRange {
