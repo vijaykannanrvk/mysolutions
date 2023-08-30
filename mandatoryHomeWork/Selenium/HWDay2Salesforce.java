@@ -28,6 +28,7 @@ public class HWDay2Salesforce {
 		options.setExperimentalOption("prefs", prefs);
 		driver = new ChromeDriver(options);
 		driver.get("https://login.salesforce.com");
+		driver.switchTo().alert().accept();
 		waitForElement(By.cssSelector("input.username")).sendKeys("hari.radhakrishnan@qeagle.com");
 		waitForElement(By.cssSelector("input.password")).sendKeys("Leaf$1234");
 		waitForElementClickable(By.cssSelector("input#Login")).click();

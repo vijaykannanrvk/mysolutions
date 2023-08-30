@@ -36,8 +36,8 @@ public class DistributeChoclates {
 	
 	public int distributeChoco(int [] numbers)
 	{
-		Set<Integer> mySet = Arrays.stream(numbers).boxed().collect(Collectors.toSet());
-		Arrays.stream(numbers).forEach(System.out::println);
+		/*Set<Integer> mySet = Arrays.stream(numbers).boxed().collect(Collectors.toSet());
+		Arrays.stream(numbers).forEach(System.out::println);*/
 		if(mySet.size()>=numbers.length/2)
 		{
 			return numbers.length/2;

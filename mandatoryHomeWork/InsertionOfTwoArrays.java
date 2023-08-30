@@ -41,7 +41,7 @@ public class InsertionOfTwoArrays {
 					}
 				}
 		}
-        return mySet.stream().mapToInt(x->x).toArray();
+        return mySet;//.stream().mapToInt(x->x).toArray();
     }
 	
 	@Test
