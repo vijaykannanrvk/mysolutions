@@ -1,4 +1,8 @@
-package mysolutions.mandatoryHomeWork;
+package mysolutions.mandatoryHomeWork.foundation.Aug1stWeek.day3;
+
+import org.junit.Test;
+
+import org.junit.Assert;
 
 public class TruncateString {
 	
@@ -19,5 +23,10 @@ public class TruncateString {
         return s.substring(0,startpos);
 	}
 
+	@Test
+	public void test1()
+	{
+		Assert.assertEquals("Hello how are you", truncate("Hello how are you Contestant", 4));
+	}
 	
 }
