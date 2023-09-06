@@ -1,4 +1,4 @@
-package mysolutions.mandatoryHomeWork.foundation.Aug1stWeek.day1;
+package mysolutions.mandatoryHomeWork.foundation.Sep1stWeek.day1;
 
 import java.util.Arrays;
 import java.util.List;

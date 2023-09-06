@@ -1,4 +1,4 @@
-package mysolutions.mandatoryHomeWork.foundation.Aug1stWeek.day2;
+package mysolutions.mandatoryHomeWork.foundation.Sep1stWeek.day2;
 
 import org.junit.Test;
 
