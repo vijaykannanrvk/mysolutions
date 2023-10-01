@@ -18,21 +18,24 @@ public class StrainghtLine {
 
 	public boolean isStraightLine(int[][] coordinates)
 	{
-		boolean flag=false;
-		int xtemp =coordinates[1][0]-coordinates[0][0];
-		int ytemp= coordinates[1][1]-coordinates[0][1];
-		for(int i=1;i<coordinates.length;i++)
-		{
-			flag=false;
-			if(coordinates[i][0]==coordinates[i-1][0])
-				flag=true;
-			else if(coordinates[i][1]==coordinates[i-1][1])
-				flag =true;
-			else if(xtemp==coordinates[i][0]-coordinates[i-1][0]&&ytemp==coordinates[i][1]-coordinates[i-1][1])
-				flag = true;
-			System.out.println(flag);
-		}
-		return flag;
+		int slope=0;
+        if(coordinates.length>2)
+				{
+					if((coordinates[1][0]-coordinates[0][0])!=0)
+					slope = (coordinates[1][1]-coordinates[0][1])/(coordinates[1][0]-coordinates[0][0]);
+					for(int i=2;i<coordinates.length;i++)
+					{
+						if(slope!=0)
+						{
+							if((coordinates[i][0]-coordinates[i-1][0])!=0)
+							{
+							if(slope!=(coordinates[i][1]-coordinates[i-1][1])/(coordinates[i][0]-coordinates[i-1][0]))
+						return false;
+							}
+						}
+					}
+				}
+				return true;
 	}
 	
 	@Test
