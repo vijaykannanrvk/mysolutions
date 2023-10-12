@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class SumOnUniques {
 	public int sumOfUnique(int[] nums) {
-        Map<Integer,Integer> myMap  = new HashMap();
+        Map<Integer,Integer> myMap  = new HashMap<Integer, Integer>();
         int sum=0;
         for(int i=0;i<nums.length;i++)
         {

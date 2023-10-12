@@ -1,5 +1,7 @@
 package mysolutions.mandatoryHomeWork.foundation.Sep4thWeek.day1;
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -30,6 +32,7 @@ public class MinimumRecolors {
     @Test
 	public void test1()
 	{
+    	List
 		Assert.assertEquals(3, minRecolors("WBBWWBBWBW",7));
 	}
 	
